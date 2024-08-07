@@ -1,0 +1,55 @@
+
+body {
+    margin: 0em;
+     background: linear-gradient(135deg, 
+       #5a4de8,   /* Color base */
+       #1fbbf0,   /* Color más claro */
+       #5a4de8,   /* Color base */
+       #8c50c5,   /* Color morado */
+       #f25287,   /* Color rosa */
+       #1fbbf0,   /* Color más claro */
+       #5a4de8    /* Color base */
+     );
+     background-size: 400% 400%;
+     animation: gradientAnimation 8s ease infinite;
+   }
+   
+   @keyframes gradientAnimation {
+     0%, 100% {
+       background-position: 0% 50%;
+     }
+     50% {
+       background-position: 100% 50%;
+     }
+   }
+   
+   .cover{
+     height:400px;
+     background-image:url(https://images.unsplash.com/photo-1578241873976-9e4fa81ebeb8?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+     color:white;
+     background-size: cover; /* funciona para dimensionar la imagen para que se vea bien*/
+     background-position: center;
+     background-color: rgba(0,0,0,0.3);
+     background-blend-mode: darken;
+     
+   }
+   .cover-small{
+     height:200px ;
+     background-blend-mode:normal;
+   }
+   
+   .card{
+     border: 0 !important;
+     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+   }
+   .card-title{
+     /* funciona para anivelar el titulo*/
+     min-height: 5rem;
+   }
+   .card-tex{
+     min-height: 10rem;
+   }
+   .imagen {
+     width: 450px; /* Cambia este valor según tu necesidad */
+     height: auto; /* Esto mantiene la proporción original de la imagen */
+   }
